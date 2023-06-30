@@ -1,9 +1,13 @@
 // import logo from './logo.svg';
 import './App.css';
+import  'bootstrap/dist/css/bootstrap.min.css'; //for bootstrap styling
 import { NavBar } from './components/NavBar';
 import { Banner } from './components/Banner';
 import { Skills } from './components/Skills';
-import  'bootstrap/dist/css/bootstrap.min.css'; //for bootstrap styling
+import { Projects } from './components/Projects';
+import {Contact} from './components/Contact'
+import {Footer} from './components/Footer'
+import {TimeLine} from './components/TimeLine'
 
 function App() {
   return (
@@ -11,6 +15,10 @@ function App() {
       <NavBar/>
       <Banner/>
       <Skills/>
+      <Projects/>
+      <TimeLine/>
+      <Contact/>
+      <Footer/>
     </div>
   );
 }

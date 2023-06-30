@@ -1,9 +1,11 @@
 import { useState, useEffect } from "react";
 import { Navbar, Nav, Container } from "react-bootstrap";
 // import logo from '../assets/img/logo.svg';
-import navIcon1 from '../assets/img/nav-icon1.svg';
-import navIcon2 from '../assets/img/nav-icon2.svg';
-import navIcon3 from '../assets/img/nav-icon3.svg';
+import gitlabIcon from '../assets/img/gitlab.svg'
+import githubIcon from '../assets/img/github.svg'
+import linkdenIcon from '../assets/img/linkedin.svg'
+import instagramIcon from '../assets/img/instagram.svg'
+import mediumIcon from '../assets/img/medium.svg'
 import { HashLink } from 'react-router-hash-link';
 
 import {  BrowserRouter as Router} from "react-router-dom";
@@ -31,7 +33,8 @@ export const NavBar = () => {
   }
 
   return (
-    <Router>
+    <section className="home" id="home">
+<Router>
       <Navbar expand="md" className={scrolled ? "scrolled" : ""}>
         <Container>
           <Navbar.Brand href="/">
@@ -44,17 +47,20 @@ export const NavBar = () => {
             <Nav className="ms-auto">
               <Nav.Link href="#home" className={activeLink === 'home' ? 'active navbar-link' : 'navbar-link'} onClick={() => onUpdateActiveLink('home')}>Home</Nav.Link>
               <Nav.Link href="#skills" className={activeLink === 'skills' ? 'active navbar-link' : 'navbar-link'} onClick={() => onUpdateActiveLink('skills')}>Skills</Nav.Link>
-              <Nav.Link href="#projects" className={activeLink === 'projects' ? 'active navbar-link' : 'navbar-link'} onClick={() => onUpdateActiveLink('projects')}>Projects</Nav.Link>
-              <Nav.Link href="#blogs" className={activeLink === 'blogs' ? 'active navbar-link' : 'navbar-link'} onClick={() => onUpdateActiveLink('projects')}>Blogs</Nav.Link>
+              <Nav.Link href="#project" className={activeLink === 'project' ? 'active navbar-link' : 'navbar-link'} onClick={() => onUpdateActiveLink('project')}>Projects</Nav.Link>
+              <Nav.Link href="#time-line" className={activeLink === 'time-line' ? 'active navbar-link' : 'navbar-link'} onClick={() => onUpdateActiveLink('time-line')}>Time Line</Nav.Link>
 
+              {/* <Nav.Link href="#project" className={activeLink === 'blogs' ? 'active navbar-link' : 'navbar-link'} onClick={() => onUpdateActiveLink('blogs')}>Blogs</Nav.Link> */}
             </Nav>
 
             <span className="navbar-text">
               <div className="social-icon">
-                <a href="#"><img src={navIcon1} alt="" /></a>
-                <a href="#"><img src={navIcon2} alt="" /></a>
-                <a href="#"><img src={navIcon3} alt="" /></a>
-                <a href="#"><img src={navIcon3} alt="" /></a>
+                <a href="https://www.linkedin.com/in/rajesh-khan-105635172/"><img src={linkdenIcon} alt="" /></a>
+                <a href="#"><img src={instagramIcon} alt="" /></a>
+                <a href="https://gitlab.com/khanrajesh"><img src={gitlabIcon} alt="" /></a>
+                <a href="https://github.com/khanrajesh"><img src={githubIcon} alt="" /></a>
+                <a href="https://medium.com/@khanrajesh7128"><img src={mediumIcon} alt="" /></a>
+
               </div>
               <HashLink to='#connect'>
                 <button className="vvd"><span>Let’s Connect</span></button>
@@ -64,5 +70,6 @@ export const NavBar = () => {
         </Container>
       </Navbar>
     </Router>
+    </section>
   )
 }
