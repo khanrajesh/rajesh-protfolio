@@ -1,6 +1,10 @@
-import meter1 from "../assets/img/meter1.svg";
-import meter2 from "../assets/img/meter2.svg";
-import meter3 from "../assets/img/meter3.svg";
+import appleLogo from '../assets/img/applelogo.png'
+import androidLogo from '../assets/img/androidlogo.png'
+import webLogo from '../assets/img/weblogo.png'
+import globalLogo from '../assets/img/globallogo.png'
+import aiLogo from '../assets/img/ailogo.png'
+import databaseLogo from '../assets/img/databaselogo.png'
+
 import Carousel from 'react-multi-carousel';
 import 'react-multi-carousel/lib/styles.css';
 import arrow1 from "../assets/img/arrow1.svg";
@@ -39,32 +43,32 @@ export const Skills = () => {
                         </br>Consistently deliver exceptional results by staying updated with the latest industry standards and evolving norms.</p>
                         <Carousel responsive={responsive} infinite={true} className="owl-carousel owl-theme skill-slider">
                             <div className="item">
-                                <img src={meter1} alt="Image" />
+                                <img src={androidLogo} alt="Image" />
                                 <h5>Android Development</h5>
                                 <h5>(Java, Kotlin, React Native)</h5>
                             </div>
                             <div className="item">
-                                <img src={meter3} alt="Image" />
+                                <img src={appleLogo} alt="Image" />
                                 <h5>ISO Development</h5>
                                 <h5>(Xcode, Swift)</h5>
                             </div>
                             <div className="item">
-                                <img src={meter2} alt="Image" />
+                                <img src={globalLogo} alt="Image" />
                                 <h5>Web Development</h5>
                                 <h5>(React.js, Javascrept)</h5>
                             </div>
                             <div className="item">
-                                <img src={meter1} alt="Image" />
+                                <img src={webLogo} alt="Image" />
                                 <h5>Backend Development</h5>
                                 <h5>(Ktor, Django, Flask)</h5>
                             </div>
                             <div className="item">
-                                <img src={meter2} alt="Image" />
+                                <img src={aiLogo} alt="Image" />
                                 <h5>ML & AI Model Deployment</h5>
                                 <h5>(R, Python)</h5>
                             </div>
                             <div className="item">
-                                <img src={meter1} alt="Image" />
+                                <img src={databaseLogo} alt="Image" />
                                 <h5>Data Base Management</h5>
                                 <h5>(FireBase, SQL, MongoDB)</h5>
                             </div>
