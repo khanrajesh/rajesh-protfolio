@@ -1,47 +1,105 @@
 import { Container, Row, Col, Tab, Nav } from "react-bootstrap";
 import { ProjectCard } from "./ProjectCard";
-import projImg1 from "../assets/img/project-img1.png";
-import projImg2 from "../assets/img/project-img2.png";
-import projImg3 from "../assets/img/project-img3.png";
+
+import webproject1 from '../assets/img/webproject1.png'
+import webproject2 from '../assets/img/webproject2.png'
+import webproject3 from '../assets/img/webproject3.png'
+import webproject4 from '../assets/img/webproject4.png'
+
+import androidproject1 from '../assets/img/androidproject1.png'
+import androidproject2 from '../assets/img/androidproject2.png'
+import androidproject3 from '../assets/img/androidproject3.png'
+import androidproject4 from '../assets/img/androidproject4.png'
+import androidproject6 from '../assets/img/androidproject6.png'
+import androidproject7 from '../assets/img/androidproject7.jpeg'
+
+import backendproject1 from '../assets/img/backendproject1.png'
+import backendproject2 from '../assets/img/backendproject2.jpg'
+
 import colorSharp2 from "../assets/img/color-sharp2.png";
 import 'animate.css';
 import TrackVisibility from 'react-on-screen';
 
 export const Projects = () => {
 
-  const projects = [
+  const webProject = [
     {
-      title: "Business Startup",
+      title: "Udgam Foundation",
       description: "Design & Development",
-      imgUrl: projImg1,
+      imgUrl: webproject1,
+      url:"https://www.udgamfoundation.net/"
     },
     {
-      title: "Business Startup",
+      title: "Skill Afford",
       description: "Design & Development",
-      imgUrl: projImg2,
+      imgUrl: webproject2,
+      url:"https://skillafford.wixsite.com/mysite"
     },
     {
-      title: "Business Startup",
+      title: "Biswal Group of Construction",
       description: "Design & Development",
-      imgUrl: projImg3,
-    },
-    {
-      title: "Business Startup",
+      imgUrl: webproject3,
+      url: "https://skillafford.wixsite.com/website-1"
+    }, {
+      title: "Dew Drop Entertainment",
       description: "Design & Development",
-      imgUrl: projImg1,
-    },
-    {
-      title: "Business Startup",
-      description: "Design & Development",
-      imgUrl: projImg2,
-    },
-    {
-      title: "Business Startup",
-      description: "Design & Development",
-      imgUrl: projImg3,
+      imgUrl: webproject4,
+      url:"https://skillafford.wixsite.com/dewdropsent"
     },
   ];
 
+  const androidProject = [
+    {
+      title: "Intealth (the healthy app)",
+      description: "Design & Development",
+      imgUrl: androidproject1,
+      url:"https://scene.zeplin.io/project/6220d01c9159c859c61d0d16"
+    },
+    {
+      title: "Sutpitara",
+      description: "Design & Development",
+      imgUrl: androidproject2,
+      url:"https://www.figma.com/file/TYNm63kDEpVO64HrJ638FI/Sutpitara?type=design&node-id=0%3A1&mode=design&t=gbbUOcMQZXLy9vRE-1"
+    },
+    {
+      title: "DORO",
+      description: "Design, Development & Architecture",
+      imgUrl: androidproject3,
+      url:"https://play.google.com/store/apps/details?id=com.silverphoenix_v2.doro"
+    }, {
+      title: "DORO Partner",
+      description: "Design, Development & Architecture",
+      imgUrl: androidproject4,
+      url:"https://play.google.com/store/apps/details?id=com.silverphoenix.doropartner"
+    },{
+      title: "DORO Admin",
+      description: "Design, Development & Architecture",
+      imgUrl: androidproject3,
+    },{
+      title: "NetWeb Bharat",
+      description: "Design, Development & Architecture",
+      imgUrl: androidproject6,
+      url:"https://netwebbharat.com/"
+    },{
+      title: "Unity is Strength",
+      description: "Design, Development & Architecture",
+      imgUrl: androidproject7,
+      url:"https://uisodisha.in/"
+    },
+
+  ];
+
+  const backendProject = [
+    {
+      title: "Backend Developer (Ktor)",
+      description: "System Design and Server Development",
+      imgUrl: backendproject1,
+    }, {
+      title: "Tool Detection & Monitoring software (Python & Django)",
+      description: "System Design and Server Development",
+      imgUrl: backendproject2,
+    },
+  ];
   return (
     <section className="project" id="project">
       <Container>
@@ -61,7 +119,7 @@ export const Projects = () => {
                       <Nav.Link eventKey="second">Android & IOS</Nav.Link>
                     </Nav.Item>
                     <Nav.Item>
-                      <Nav.Link eventKey="third">Backend</Nav.Link>
+                      <Nav.Link eventKey="third">Backend, AI & ML</Nav.Link>
                     </Nav.Item>
                   </Nav>
                   <Tab.Content id="slideInUp" className={isVisible ? "animate__animated animate__slideInUp" : ""}>
@@ -69,7 +127,7 @@ export const Projects = () => {
                     <Tab.Pane eventKey="first">
                       <Row>
                         {
-                          projects.map((project, index) => {
+                          webProject.map((project, index) => {
                             return (
                               <ProjectCard
                                 key={index}
@@ -82,11 +140,31 @@ export const Projects = () => {
                     </Tab.Pane>
                     
                     <Tab.Pane eventKey="second">
-                      <p>Second Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque quam, quod neque provident velit, rem explicabo excepturi id illo molestiae blanditiis, eligendi dicta officiis asperiores delectus quasi inventore debitis quo.</p>
-                    </Tab.Pane>
+                      <Row>
+                        {
+                          androidProject.map((project, index) => {
+                            return (
+                                <ProjectCard
+                                    key={index}
+                                    {...project}
+                                />
+                            )
+                          })
+                        }
+                      </Row>                    </Tab.Pane>
                     <Tab.Pane eventKey="third">
-                      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque quam, quod neque provident velit, rem explicabo excepturi id illo molestiae blanditiis, eligendi dicta officiis asperiores delectus quasi inventore debitis quo.</p>
-                    </Tab.Pane>
+                      <Row>
+                        {
+                          backendProject.map((project, index) => {
+                            return (
+                                <ProjectCard
+                                    key={index}
+                                    {...project}
+                                />
+                            )
+                          })
+                        }
+                      </Row>                    </Tab.Pane>
                   </Tab.Content>
                 </Tab.Container>
               </div>}

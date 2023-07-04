@@ -52,7 +52,7 @@ export const Banner = () => {
   return (
     <section className="banner" id="name">
       <Container>
-        <Row className="align-item-center">
+        <Row className="banner-row">
           <Col xs={12} md={6} xl={7}>
           <TrackVisibility>
               {({ isVisible }) =>
