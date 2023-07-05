@@ -39,7 +39,7 @@ export const TimeLine = () => {
                     <img className="p-image" id="p5" src={p5} alt="p5"/> {/*red planet*/}
                     <img className="p-image" id="p6" src={p6} alt="p6"/>
                     <img className="p-image" id="p7" src={p7} alt="p7"/>
-                    <img className="p-image" id="p10" src={p10} alt="p10"/>
+                    {/*<img className="p-image" id="p10" src={p10} alt="p10"/>*/}
                     <img className="p-image" id="p11" src={p11} alt="p11"/> {/*last blue planet*/}
 
 
@@ -55,6 +55,7 @@ export const TimeLine = () => {
                                 Axis Bank, AEPS implements.
                                 Orbonix (Orbo Care) implements a Medical Test Management System, Admin-User Wallet, and Paytm Integration.
                             </p>
+
                         </div>
                     </Col>
 
@@ -126,6 +127,8 @@ export const TimeLine = () => {
 
 
                 </div>
+                {/*<svg id="erOR8j64oJM1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 300 300" shape-rendering="geometricPrecision" text-rendering="geometricPrecision"><path d="M0,29.249269c56.889828,18.524537,181.686708-42.898929,191.436464,24.37439s-90.672732,83.847903-105.297367,127.721807-36.561587,67.273319,13.649658,84.82288s61.423464,7.799805,109.19727,17.549561c31.849204,6.499837,60.448489,9.749756,85.797854,9.749756" transform="translate(.000002 0)" fill="none" stroke="#3f5787" stroke-width="0.6"/></svg>*/}
+
 
             </Container>
         </section>
