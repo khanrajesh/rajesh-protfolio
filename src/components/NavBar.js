@@ -9,6 +9,9 @@ import mediumIcon from '../assets/img/medium.svg'
 import { HashLink } from 'react-router-hash-link';
 
 import {  BrowserRouter as Router} from "react-router-dom";
+import p1 from "../assets/img/p1.png";
+import backendproject2 from '../assets/img/my_img.jpg'
+
 
 export const NavBar = () => {
 
@@ -38,7 +41,12 @@ export const NavBar = () => {
       <Navbar expand="md" className={scrolled ? "scrolled" : ""}>
         <Container>
           <Navbar.Brand href="/">
-           <h1 className="ms-logo"> Rajesh Khan </h1>
+            <div className="logo">
+                 <span className="image-container">
+                    <img className="ms-image" id="ms-image" src={backendproject2} alt="p1"/>
+                 </span>
+                <h1 className="ms-logo">Rajesh Khan</h1>
+            </div>
           </Navbar.Brand>
           <Navbar.Toggle aria-controls="basic-navbar-nav">
             <span className="navbar-toggler-icon"></span>

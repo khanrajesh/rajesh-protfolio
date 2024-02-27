@@ -8,11 +8,16 @@ import { Projects } from './components/Projects';
 import {Contact} from './components/Contact'
 import {Footer} from './components/Footer'
 import {TimeLine} from './components/TimeLine'
+import {useRef} from "react";
+
 
 function App() {
-  return (
+
+    return (
+
     <div className="App">
-      <NavBar/>
+
+        <NavBar/>
       <Banner/>
       <Skills/>
       <Projects/>
