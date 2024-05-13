@@ -11,6 +11,7 @@ import { HashLink } from 'react-router-hash-link';
 import {  BrowserRouter as Router} from "react-router-dom";
 import p1 from "../assets/img/p1.png";
 import backendproject2 from '../assets/img/my_img.jpg'
+import {Ventures} from "./Ventures";
 
 
 export const NavBar = () => {
@@ -57,6 +58,7 @@ export const NavBar = () => {
               <Nav.Link href="#skills" className={activeLink === 'skills' ? 'active navbar-link' : 'navbar-link'} onClick={() => onUpdateActiveLink('skills')}>Skills</Nav.Link>
               <Nav.Link href="#project" className={activeLink === 'project' ? 'active navbar-link' : 'navbar-link'} onClick={() => onUpdateActiveLink('project')}>Projects</Nav.Link>
               <Nav.Link href="#time-line" className={activeLink === 'time-line' ? 'active navbar-link' : 'navbar-link'} onClick={() => onUpdateActiveLink('time-line')}>Time Line</Nav.Link>
+              <Nav.Link href="#venture" className={activeLink === 'venture' ? 'active navbar-link' : 'navbar-link'} onClick={() => onUpdateActiveLink('ventures')}>Contributions</Nav.Link>
 
               {/* <Nav.Link href="#project" className={activeLink === 'blogs' ? 'active navbar-link' : 'navbar-link'} onClick={() => onUpdateActiveLink('blogs')}>Blogs</Nav.Link> */}
             </Nav>
