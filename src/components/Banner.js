@@ -128,7 +128,7 @@ export const Banner = () => {
                                             // handleDownload();
                                             openPDF2();
                                         }}>
-                                            Download My CV <ArrowRightCircle size={25}/>
+                                            Get My Resume <ArrowRightCircle size={25}/>
                                         </button>
 
                                         {/*<button onClick={() => {*/}
@@ -156,3 +156,5 @@ export const Banner = () => {
         </section>
     );
 };
+
+
